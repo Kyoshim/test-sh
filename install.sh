@@ -18,4 +18,4 @@ pm2 link $SECRET_ID $PUBLIC_ID
 green='\e[0;32m'
 endColor='\e[0m'
 
-echo -e "${green}Installation done, please restart your terminal.${endColor}"
+echo -e "${green}Installation done, Your PM2 is now link with the keymetrics's dashboard, please restart your terminal.${endColor}"
