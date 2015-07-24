@@ -10,28 +10,15 @@
 # nvm alias default stable
 # npm install -g pm2@latest
 # pm2 updatePM2
+# pm2 link $SECRET_ID $PUBLIC_ID
+
 
 green='\e[0;32m'
 endColor='\e[0m'
 
 echo -e "${green}Installation done, please restart your terminal.${endColor}"
 
-echo $PRIVATE_KEY;
-echo $PUBLIC_KEY;
+echo $SECRET_ID
+echo $PUBLIC_ID
 
-
-#!/bin/bash
-
-url="$1"
-
-w=("-sS"
-"-w
-Effective URL: %{url_effective}
-Size         : %{size_download}
-Total time   : %{time_total}
-Redirect URL : %{redirect_url}"
-)
-
-page="$(curl "${w[@]}" --include --location --config curl.config "$url")"
-
-# curl -d PUBLIC_KEY="qwdwdqdw" -d PRIVATE_KEY="ewfeffwe" http://qwdwd/.sh | bash
+# SECRET_ID="qwdwdqdw" PUBLIC_ID="ewfeffwe" curl https://install.keymetrics.io/install.sh | bash
