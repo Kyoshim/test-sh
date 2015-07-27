@@ -11,7 +11,7 @@ nvm install stable
 nvm use stable
 nvm alias default stable
 npm install -g pm2@latest
-pm2 updatePM2
+pm2 update
 pm2 link $SECRET_ID $PUBLIC_ID
 
 
